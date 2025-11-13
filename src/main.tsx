@@ -1,10 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+createRoot(document.getElementById("root")!).render(
+  // Removed <React.StrictMode> to avoid third-party widget loops in dev
+  <App />
+);
